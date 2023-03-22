@@ -1,0 +1,17 @@
+.form_margin{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+}
+.input_style{
+    width: 540px;
+}
+span.keyword{color:red}
+.find_result{
+    width: 90%;
+    /*margin-left: 2%;*/
+    /*margin-right: 5%;*/
+}
+
+.mouse{cursor:pointer}
+

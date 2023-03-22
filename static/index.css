@@ -1,0 +1,20 @@
+.form_margin{
+    margin:auto;
+    margin-top: 8%;
+    width: auto;
+    height: auto;
+}
+.search_magin{
+    ;
+}
+.title_margin{
+    margin:auto;
+    margin-top: 5%;
+}
+.title_style{
+    color: blue;
+}
+.search_text_style{
+    width: 540px;
+    color: grey;
+}

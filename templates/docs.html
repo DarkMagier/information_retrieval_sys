@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doc查看</title>
+    <link rel="stylesheet"href="static/search.css"type="text/css">
+    <link rel="stylesheet"href="static/bootstrap.css"type="text/css">
+</head>
+<body>
+<style>
+    .mouse{cursor:pointer}
+</style>
+<form id="search_form"class="form_margin" method="GET" action="/search">
+        <div class="input-group">
+            <label id="title" for="input_search_text" class="mouse control-label"style="vertical-align: middle;margin-top: 1%"><h5>信息检索：</h5></label>&nbsp;
+        <!--<input id="input_search_text"type="text"class="form-control input_style"value={% block search_wd %}{% endblock %} name="wd">-->
+        <input id="input_search_text"type="text"class="form-control input_style"value="" name="wd">
+        <input id="read_search_text"type="text"class="form-control input_style"value="Y"style="display: None" name="read_to_search">
+        <!--<input id="current_page_index"type="text"style="display: none" value={{ current_page_index}} name="current_page_index">-->
+        <input id="input_submit_text"type="submit" class="btn btn-primary" value="搜索一下">
+        </div>
+</form>
+<div style="background-color: #f5f6f5;margin-top: 2%;height: 35px">
+     <h5 style="margin-left: 5%;padding-top: 5px">Doc查看</h5>
+        </div>
+<div style="width: 90%;margin-left: 5%;margin-top:1%">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ text }}
+</div>
+
+
+
+<div id="footer"class="footer navbar-fixed-bottom "style="background-color: #f5f6f5;">
+    <div class="container text-center">
+        <div class="text-center"><span>首都师范大学</span><span> 信息工程学院</span><span> 计算机科学与技术</span></div>
+        <div >1151003123 杨自修</div>
+    </div>
+</div>
+<script src="/static/jquery-3.3.1.min.js"></script>
+<script>
+    $("#title").bind('click',function () {
+        window.location.replace("/");
+    })
+</script>
+<!--<script src="static/search.js"></script>-->
+</body>
+</html>
